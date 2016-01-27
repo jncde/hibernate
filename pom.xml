@@ -3,11 +3,11 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>test.hibernate</groupId>
-  <artifactId>tutorial</artifactId>
+  <artifactId>hibernate</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>jar</packaging>
 
-  <name>tutorial</name>
+  <name>hibernate</name>
   <url>http://maven.apache.org</url>
 
   <properties>
