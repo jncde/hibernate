@@ -37,6 +37,7 @@
         <property name="hibernate.connection.username">hibernate</property>
         <property name="hibernate.connection.password">hibernate</property>
         <property name="hibernate.connection.url">jdbc:postgresql://localhost:5432/hibernate</property>
+        <property name="hibernate.current_session_context_class">thread</property>
 
 
 
@@ -47,6 +48,7 @@
         <property name="show_sql">true</property>
 
         <mapping resource="org/hibernate/tutorial/hbm/Event.hbm.xml"/>
+        <mapping resource="org/hibernate/tutorial/hbm/Person.hbm.xml"/>
 
     </session-factory>
 
