@@ -9,7 +9,8 @@ public class Person {
   private int    age;
   private String firstname;
   private String lastname;
-  private Set    events = new HashSet ();
+  private Set    events         = new HashSet ();
+  private Set    emailAddresses = new HashSet ();
 
   public Person () {
   }
@@ -20,6 +21,14 @@ public class Person {
 
   public void setEvents (Set events) {
     this.events = events;
+  }
+
+  public Set getEmailAddresses () {
+    return emailAddresses;
+  }
+
+  public void setEmailAddresses (Set emailAddresses) {
+    this.emailAddresses = emailAddresses;
   }
 
   public Long getId () {

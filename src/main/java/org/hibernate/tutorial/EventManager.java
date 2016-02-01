@@ -22,6 +22,10 @@ public class EventManager {
 
     mgr.addPersonToEvent2 (personId2, eventID2);
 
+    mgr.addEmailToPerson (personId2, "p2@emailAddress.com");
+    mgr.addEmailToPerson (personId2, "p2@emailAddress.com");
+    mgr.addEmailToPerson (personId2, "p3@emailAddress.com");
+
     HibernateUtil.getSessionFactory ().close ();
   }
 
@@ -91,6 +95,18 @@ public class EventManager {
     session2.update (aPerson); // Reattachment of aPerson
 
     session2.getTransaction ().commit ();
+  }
+
+  private void addEmailToPerson (Long personId,
+                                 String emailAddress) {
+    Session session = HibernateUtil.getSessionFactory ().getCurrentSession ();
+    session.beginTransaction ();
+
+    Person aPerson = (Person) session.load (Person.class, personId);
+    // adding to the emailAddress collection might trigger a lazy load of the collection
+    aPerson.getEmailAddresses ().add (emailAddress);
+
+    session.getTransaction ().commit ();
   }
 
 }
