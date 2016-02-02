@@ -9,6 +9,8 @@ public class Event {
   private String title;
   private Date   date;
 
+  //  private Set    participants = new HashSet ();
+
   public Event () {
   }
 
@@ -19,6 +21,14 @@ public class Event {
   private void setId (Long id) {
     this.id = id;
   }
+
+  //  public Set getParticipants () {
+  //    return participants;
+  //  }
+  //
+  //  public void setParticipants (Set participants) {
+  //    this.participants = participants;
+  //  }
 
   public Date getDate () {
     return date;

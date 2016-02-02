@@ -5,10 +5,13 @@
 
 <hibernate-mapping package="org.hibernate.tutorial.hbm">
   <class name="Event" table="EVENTS">
-        <id name="id" column="EVENT_ID">
-            <generator class="native"/>
-        </id>
-        <property name="date" type="timestamp" column="EVENT_DATE"/>
-        <property name="title"/>
-    </class>
+    <id name="id" column="EVENT_ID">
+      <generator class="native" />
+    </id>
+    <property name="date" type="timestamp" column="EVENT_DATE" />
+    <property name="title" />
+
+
+
+  </class>
 </hibernate-mapping>

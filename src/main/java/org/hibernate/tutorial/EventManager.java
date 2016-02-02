@@ -25,7 +25,6 @@ public class EventManager {
     mgr.addEmailToPerson (personId2, "p2@emailAddress.com");
     mgr.addEmailToPerson (personId2, "p2@emailAddress.com");
     mgr.addEmailToPerson (personId2, "p3@emailAddress.com");
-
     HibernateUtil.getSessionFactory ().close ();
   }
 
