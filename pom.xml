@@ -40,19 +40,8 @@
     </dependency>
 
 
-    <!-- The tutorials use JUnit test cases to illustrate usage -->
-    <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>4.11</version>
-    </dependency>
 
-    <!-- The tutorials use the H2 in-memory database -->
-    <dependency>
-      <groupId>com.h2database</groupId>
-      <artifactId>h2</artifactId>
-      <version>1.2.145</version>
-    </dependency>
+
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
